@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/estilos.css">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <div id="mensaje"></div>
+
+        <form action="#" id="formulario" name="myform">
+            <ul>
+                <li class="primeros">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="string">
+                    <br>
+                
+               
+                    <label for="apellidos">Apellidos</label>
+                    <input id="apellidos" type="string">
+                    <br>
+                
+                
+                    <label for="rut">RUT</label>
+                    <input id="rut" type="string">
+                    <br>
+                
+                
+                    <label for="email">Correo Electronico</label>
+                    <input id="email" type="email">
+                    <br>
+                
+                
+                    <label for="telefono">Telefono Movil</label>
+                    <input id="telefono" type="number">
+                    <br><br>
+                </li>
+                <li>
+                    <p>Seleccione 1 o más lenguajes de programación de su interés</p>
+                    <input type="checkbox" id="python" name="lenguajes[]">
+                    <label for="python"> Python</label><br>
+                    <input type="checkbox" id="java" name="lenguajes[]">
+                    <label for="java">Java</label><br>
+                    <input type="checkbox" id="typescript" name="lenguajes[]">
+                    <label for="typescript"> Typescript</label><br>
+                    <input type="checkbox" id="php" name="lenguajes[]">
+                    <label for="php"> PHP</label><br>
+                    <input type="checkbox" id="csharp" name="lenguajes[]">
+                    <label for="Csharp"> C#</label><br>
+                    <input type="checkbox" id="cmas" name="lenguajes[]">
+                    <label for="Cmas"> C++</label><br><br>
+                </li>
+                <br><br>
+                <li>
+                    <input id="rango" type="range" min="0" max="100" step="10">
+                    <label for="rango">Cuál es su nivel de conocimiento en programación?</label>
+                </li>
+                <br><br>
+                <li id="rad">
+                    <p>Cuantos años de experiencia laboral tiene?</p>
+                    <input type="radio" id="1" name="nivel" value="1">
+                    <label for="1">1</label>
+                    <input type="radio" id="2" name="nivel" value="2">
+                    <label for="2">2</label>
+                    <input type="radio" id="3" name="nivel" value="3">
+                    <label for="3">3</label>
+                    <input type="radio" id="4" name="nivel" value="4">
+                    <label for="4">4</label>
+                    <input type="radio" id="5" name="nivel" value="5">
+                    <label for="5">5</label>
+                </li>
+                <br><br>
+                <li class="desc">
+                    <label for="descripcion">Una descripción breve acerca de usted:</label>
+                    <textarea id="descripcion" type="textArea" cols="50" rows="6"></textarea>
+                </li>
+                <li class="botones">
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="button" onclick="limpiarDatos()">Limpiar</button>
+                </li>
+                    
+            </ul>
+        </form>
+    </fieldset>
+        
+        <script src="js/inicio.js" async defer></script>
+    </body>
+</html>

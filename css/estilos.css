@@ -1,0 +1,32 @@
+form ul{
+    list-style-type: none;
+}
+form{
+    margin: auto;
+    width: 70%;
+    padding: 1em;
+    border: 1px solid black;
+}
+.primeros,.desc{
+    display: inline-block;
+    width: 120px;
+    text-align: left;
+    
+}
+textarea{
+    resize: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.primeros label,.desc label{
+    white-space: nowrap;
+}
+.botones{
+    padding-top: 30px;
+}
